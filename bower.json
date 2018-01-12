@@ -1,0 +1,6 @@
+{
+    "name": "uirobot",
+    "dependencies": {
+        "video.js": "~5.12"
+    }
+}

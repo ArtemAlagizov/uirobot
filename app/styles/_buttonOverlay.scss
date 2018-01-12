@@ -1,0 +1,45 @@
+@import 'mixins';
+
+.button-overlay {
+    @include display-flex();
+    flex-direction: column;
+    flex-grow: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .flex-row {
+        @include display-flex();
+        flex-direction: column;
+        flex-grow: 1;
+
+        .flex-button-container {
+            flex-direction: row;
+            display: flex;
+            flex-grow: 1;
+
+            .flex-button {
+                flex-grow: 1.6;
+                justify-content: center;
+                color: white;
+                display: flex;
+                align-items: center;
+                background: whitesmoke;
+                opacity: 0.5;
+                margin: 10px;
+
+                .fa {
+                    color: #6a84cc;
+                }
+
+                &.flex-empty-button, &.flex-empty-half-button {
+                    background: transparent;
+                }
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+}
