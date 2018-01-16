@@ -2,6 +2,10 @@
 
 <div class="uirobot-main-app">
     {{video-component}}
-    {{button-overlay}}
+    {{button-overlay
+            moveCursor=(action 'moveCursor')
+            push=(action 'push')
+    }}
+    {{cursor-component}}
 </div>
 

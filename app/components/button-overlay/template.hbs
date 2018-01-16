@@ -3,7 +3,7 @@
         <div class="flex-button flex-empty-half-button"></div>
         <div class="flex-button flex-empty-button"></div>
         <div class="flex-button flex-empty-button"></div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-up" {{action "move" "up"}}>
             {{fa-icon "arrow-up" size=4}}
         </div>
         <div class="flex-button flex-empty-button"></div>
@@ -14,16 +14,16 @@
 <div class="flex-row">
     <div class="flex-button-container">
         <div class="flex-button flex-empty-button"></div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-left" {{action "move" "left"}}>
             {{fa-icon "arrow-left" size=4}}
         </div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-rotate-left" {{action "move" "rotate-left"}}>
             {{fa-icon "rotate-left" size=4}}
         </div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-rotate-right" {{action "move" "rotate-right"}}>
             {{fa-icon "rotate-right" size=4}}
         </div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-right" {{action "move" "right"}}>
             {{fa-icon "arrow-right" size=4}}
         </div>
         <div class="flex-button flex-empty-button"></div>
@@ -34,11 +34,14 @@
         <div class="flex-button flex-empty-half-button"></div>
         <div class="flex-button flex-empty-button"></div>
         <div class="flex-button flex-empty-button"></div>
-        <div class="flex-button">
+        <div class="flex-button" id="arrow-down" {{action "move" "down"}}>
             {{fa-icon "arrow-down" size=4}}
         </div>
         <div class="flex-button flex-empty-button"></div>
         <div class="flex-button flex-empty-button"></div>
         <div class="flex-button flex-empty-half-button"></div>
+    </div>
+    <div class="flex-button" id="push" {{action "push"}}>
+        {{fa-icon "circle" size=2}}
     </div>
 </div>

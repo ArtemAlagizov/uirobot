@@ -1,0 +1,9 @@
+@import 'mixins';
+
+.cursor-component {
+    position: absolute;
+
+    .fa {
+        color: #fbf9c4;
+    }
+}
